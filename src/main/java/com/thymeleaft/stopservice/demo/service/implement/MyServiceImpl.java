@@ -22,7 +22,9 @@ public class MyServiceImpl implements MyService{
 		while(serviceRunning) {
 			System.out.println(" ia m running now : " + LocalTime.now());
 			Thread.sleep(1000);
-			util.testMeServiceStoppedAutowired();
+			for(int i = 0; i<5; i++) {
+				util.testMeServiceStoppedAutowired();
+			}
 		}
 	}
 
